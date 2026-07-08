@@ -4,75 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio Mati Lemos</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img class="logo" src="./assets/Logo.png" alt="Logo de la página">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="./index.html">
+                <img class="logo" src="./assets/Logo portfolio.png" alt="Iniciales del nombre"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="./pages/sobremi.html">Sobre mí</a>
+                        <a class="nav-link" href="./pages/formacion.html">Formación</a>
+                        <a class="nav-link" href="./pages/proyectos.html">Portfolio</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="./pages/sobremi.html">Sobre mí</a></li>
-                <li><a href="./pages/formacion.html">Formación</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <main>
         <figure>
-            <img src="./assets/FotoPerfil.jpeg" class="perfil" alt="Foto Perfil">
-            <figcaption>Foto frontal solamente de la cara de ésta persona</figcaption>
+            <img class="perfil" src="./assets/FotoPerfil.jpeg" class="d-block mx-auto" alt="Foto frontal de la persona">
         </figure>
-        <h1>Matías Lemos</h1>
-        <h2>Diseñador UX/UI y Desarrollador Frontend</h2>
-        <p>Diseño experiencias digitales intuitivas y las transformo en interfaces funcionales utilizando HTML, CSS y
-            JavaScript.</p>
-        <h2>Sobre mí</h2>
-        <p>Soy Diseñador UX/UI enfocado en crear productos digitales, claros, accesibles y centrados en los usuarios.
-            Combina investigación, diseño de interfaces y desarrollo frontend para transformar necesidades de negocio en
-            experiencias simples y efectivas.</p>
-        <p>Habilidades: Comunicación efectiva Empatía Pensamiento crítico Resolución de problemas Trabajo en equipo
-            Adaptabilidad Aprendizaje continuo Proactividad Atención al detalle</p>
-        <h2>Formación</h2>
-        <p>Diseño UX/UI Básico Coderhouse Curso fundamental sobre principios de diseño de experiencia de usuario e interfaces, incluyendo investigación de usuarios y metodologías básicas.</p>
-        <p>Diseño UX/UI Avanzado Coderhouse Especialización en técnicas avanzadas de prototipado, sistemas de diseño complejos y optimización de experiencias digitales.</p>
-        <p>IA para diseño web UXCristopher Certificación en el uso de inteligencia artificial para optimizar procesos de diseño web y crear experiencias más personalizadas.</p>
-        <p>Diseño UI: Diseño visual y de interfaz Udemy Curso especializado en diseño visual, tipografía, color y composición para interfaces digitales modernas y atractivas.</p>
-        <p>Gamification Mer Lara Curso sobre técnicas de gamificación aplicadas al diseño de experiencias digitales para aumentar el engagement y la motivación de los usuarios.</p>
-        <p>Desarrollo web flex En curso Coderhouse Formación práctica en desarrollo web con enfoque flexible, abarcando HTML, CSS y fundamentos de programación orientados a la construcción de interfaces funcionales.</p>
-        <h2>Portfolio</h2>
-        <p>Algunos de mis proyectos</p>
-        <p>MecApp - Diseño de experiencia y prototipado</p>
-        <p>Nautilus Engine - Del problema a la solución</p>
-        <p>NexoStudio - Web diseñada con IA</p>
-        <p>Super Sangre Joven</p>
-        <p>Haru - Aplicación financiera personal</p>
+        <div class="text-center">
+            <h1>Matías Lemos</h1>
+            <h2>Diseñador UX/UI y Desarrollador Frontend</h2>
+            <p>Diseño experiencias digitales intuitivas y las transformo en interfaces funcionales utilizando HTML y
+                CSS.</p>
+        </div>
+        <section class="container my-5">
+            <h2 class="text-center fw-bold mb-5">Sobre mí</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="fs-4">
+                        Soy Diseñador UX/UI enfocado en crear productos digitales,
+                        claros, accesibles y centrados en los usuarios. Combina
+                        investigación, diseño de interfaces y desarrollo frontend para
+                        transformar necesidades de negocio en experiencias simples y
+                        efectivas.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="habilidad p-4">
+                        <h4 class="mb-4">🎨 Habilidades</h4>
+                        <span class="badge pills">Comunicación efectiva</span>
+                        <span class="badge pills">Empatía</span>
+                        <span class="badge pills">Pensamiento crítico</span>
+                        <span class="badge pills">Resolución de problemas</span>
+                        <span class="badge pills">Trabajo en equipo</span>
+                        <span class="badge pills">Adaptabilidad</span>
+                        <span class="badge pills">Aprendizaje continuo</span>
+                        <span class="badge pills">Proactividad</span>
+                        <span class="badge pills">Atención al detalle</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="text-center">Formación</h2>
+        <section class="formacion mb-5"></section>
+        <div class="d-flex flex-wrap gap-4">
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Diseño UX/UI Básico</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">Coderhouse</h6>
+                    <p class="card-text">Curso fundamental sobre principios de diseño de experiencia de usuario e
+                        interfaces, incluyendo investigación de usuarios y metodologías básicas.</p>
+                </div>
+            </div>
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Diseño UX/UI Avanzado</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">Coderhouse</h6>
+                    <p class="card-text">Especialización en técnicas avanzadas de prototipado, sistemas de diseño
+                        complejos y optimización de experiencias digitales.</p>
+                </div>
+            </div>
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">IA para diseño web</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">UX Cristopher</h6>
+                    <p class="card-text">Certificación en el uso de inteligencia artificial para optimizar procesos de
+                        diseño web y crear experiencias más personalizadas.</p>
+                </div>
+            </div>
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Diseño UI: Diseño visual y de interfaz</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">Udemy</h6>
+                    <p class="card-text">Curso especializado en diseño visual, tipografía, color y composición para
+                        interfaces digitales modernas y atractivas.</p>
+                </div>
+            </div>
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gamification</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">Mer Lara</h6>
+                    <p class="card-text">Curso sobre técnicas de gamificación aplicadas al diseño de experiencias
+                        digitales para aumentar el engagement y la motivación de los usuarios.</p>
+                </div>
+            </div>
+            <div class="card card-formacion" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo web flex</h5>
+                    <h6 class="card-subtitle mb-2 subtitulo-card">Coderhouse</h6>
+                    <p class="card-text">Formación práctica en desarrollo web con enfoque flexible, abarcando
+                        HTML, CSS y fundamentos de programación orientados a la construcción de interfaces funcionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="formacion mb-5"></section>
+        <h2 class="text-center">Portfolio</h2>
+        <div class="d-flex flex-wrap gap-4">
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.behance.net/gallery/228369189/Diseno-de-experiencia-UXUI" target="_blank">
+                <img src="./assets/Mecapp.png" class="card-img-top" alt="Pagina donde se explica toda la experiencia"></a>
+                <div class="card-body">
+                    <p class="card-text">MecApp - Diseño de experiencia y prototipado</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.behance.net/gallery/231283863/Diseno-de-pantalla-Nautilus-Engine" target="_blank">
+                <img src="./assets/Nautilus.png" class="card-img-top" alt="Pagina donde se explica toda la experiencia"></a>
+                <div class="card-body">
+                    <p class="card-text">Nautilus Engine - Del problema a la solución</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.behance.net/gallery/235482259/Mockup-web-NexoStudio" target="_blank">
+                <img src="./assets/NexoStudio.png" class="card-img-top" alt="Pagina donde se explica toda la experiencia"></a>
+                <div class="card-body">
+                    <p class="card-text">NexoStudio - Web diseñada con IA</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.behance.net/gallery/237456669/Super-Sangre-Joven" target="_blank">
+                <img src="./assets/SSJ.png" class="card-img-top" alt="Pagina donde se explica toda la experiencia"></a>
+                <div class="card-body">
+                    <p class="card-text">Super Sangre Joven - Aplicación para la comunidad de un artista</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.behance.net/gallery/246511361/Haru" target="_blank">
+                <img src="./assets/Haru.png" class="card-img-top" alt="Pagina donde se explica toda la experiencia"></a>
+                <div class="card-body">
+                    <p class="card-text">Haru - Aplicación financiera personal</p>
+                </div>
+            </div>
+        </div>
+        <section class="formacion mb-5"></section>
     </main>
+
     <footer>
-        <h2>Contacto</h2>
-        <h3>¿Buscás un diseñador UX/UI con conocimientos de Frontend?</h3>
-        <p>Estoy listo para aportar valor a tu equipo</p>
-        <p>Matiaslemosok@gmail.com</p>
-        <p>1132776584</p>
-        <p>linkedin.com/in/matias-lemos-/</p>   
-        <div class="footer-top">
-            <div class="icons">
-                <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+        <div class="text-center">
+            <h2>Contacto</h2>
+            <h3>¿Buscás un diseñador UX/UI con conocimientos en Frontend?</h3>
+            <p>Estoy listo para aportar valor a tu equipo</p>
+        <section class="formacion mb-5"></section>
+
+        </div>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <a href="mailto:matiaslemosok@gmail.com">
+                <img src="./assets/gmail.png" alt="Gmail" class="icono"></a>
+                <p>Matiaslemosok@gmail.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://wa.me/5491112345678" target="_blank">
+                <img src="./assets/whatsapp.png" alt="WhatsApp" class="icono"></a>
+                <p>11-3277-6584</p>
+            </div>
+            <div class="col-md-4">
+                <a href="https://www.linkedin.com/in/matias-lemos-/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icono"></a>
+                <p>linkedin.com/in/matias-lemos</p>
             </div>
         </div>
         <div class="footer-divider"></div>
-        <div class="footer-bottom">
+        <div class="text-center">
             <a href="#">© 2026 Matías Lemos. Diseñador UX/UI - Desarrollador Frontend</a>
         </div>
     </footer>
-    <a href="https://wa.me/5491123456789" class="whatsapp" target="_blank">
-        <img src="./assets/WhatsApp.svg.png" alt="WhatsApp">
-    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

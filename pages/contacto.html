@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio Mati Lemos</title>
 </head>
+
 <body>
     <header>
-            <nav>
-                <ul>
-                    <li><a href="../pages/sobremi.html">Sobre mí</a></li>
-                    <li><a href="../pages/formacion.html">Formación</a></li>
-                    <li><a href="../pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="../index.html">
+                <img class="logo" src="../assets/Logo portfolio.png" alt="Iniciales del nombre"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="./sobremi.html">Sobre mí</a>
+                        <a class="nav-link" href="./formacion.html">Formación</a>
+                        <a class="nav-link" href="./proyectos.html">Portfolio</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-
+        <figure>
+            <img class="perfil" src="../assets/FotoPerfil.jpeg" class="d-block mx-auto" alt="Foto frontal de la persona">
+        </figure>
+        <div class="text-center">
+            <h1>Matías Lemos</h1>
+            <h2>Diseñador UX/UI y Desarrollador Frontend</h2>
+            <p>Diseño experiencias digitales intuitivas y las transformo en interfaces funcionales utilizando HTML y
+                CSS.</p>
+        </div>
+        
     </main>
+
     <footer>
-        <div class="footer-top">
-            <div class="icons">
-                <a href="#"><img src="../assets/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../assets/instagram.png" alt="Instagram"></a>
+        <div class="text-center">
+            <h2>Contacto</h2>
+            <h3>¿Buscás un diseñador UX/UI con conocimientos en Frontend?</h3>
+            <p>Estoy listo para aportar valor a tu equipo</p>
+        <section class="formacion mb-5"></section>
+
+        </div>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <a href="mailto:matiaslemosok@gmail.com">
+                <img src="../assets/gmail.png" alt="Gmail" class="icono"></a>
+                <p>Matiaslemosok@gmail.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://wa.me/5491112345678" target="_blank">
+                <img src="../assets/whatsapp.png" alt="WhatsApp" class="icono"></a>
+                <p>11-3277-6584</p>
+            </div>
+            <div class="col-md-4">
+                <a href="https://www.linkedin.com/in/matias-lemos-/" target="_blank">
+                <img src="../assets/linkedin.png" alt="LinkedIn" class="icono"></a>
+                <p>linkedin.com/in/matias-lemos</p>
             </div>
         </div>
         <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            <a href="#">Copyright © Mati Lemos 2026</a>
-            <a href="#">Nota legal</a>
-            <a href="#">Política de cookies</a>
+        <div class="text-center">
+            <a href="#">© 2026 Matías Lemos. Diseñador UX/UI - Desarrollador Frontend</a>
         </div>
     </footer>
-    <a href="https://wa.me/5491123456789" class="whatsapp" target="_blank">
-        <img src="../assets/WhatsApp.svg.png" alt="WhatsApp">
-    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

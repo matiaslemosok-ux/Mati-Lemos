@@ -14,75 +14,70 @@ body {
 }
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.nav-links{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links a{
-    text-decoration: none;
+    background-color: #dbeafe;
+    font-weight: bold;
 }
 
 .logo {
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
 .perfil {
+    display: block;
+    margin: 0 auto;
     width: 200px;
-    height: auto;
+    border-radius: 100px;
+    border: 5px solid #dbeafe;
+    margin-top: 50px;
 }
 
-.footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+.habilidad {
+    border: 1px solid #7ab3ff;
+    border-radius: 24px;
+    min-height: 280px;
 }
 
-.icons {
-    display: flex;
-    gap: 25px;
+.pills {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 999px;
+}
+
+.card-formacion{
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 16px;
+}
+
+.subtitulo-card{
+    color: #0d6efd;
+}
+
+footer {
+    background-color: #dbeafe;
+    padding: 50px 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
 }
 
 .footer-divider {
     height: 1px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #000;
     margin: 40px 0;
 }
 
-.footer-bottom {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-footer {
-    background-color: #a0aded;
-    padding: 50px 50px;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 65px;
-    height: 65px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
-}
-
-.whatsapp img {
-    width: 35px;
+.icono{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 10px;
 }
