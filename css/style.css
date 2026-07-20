@@ -49,8 +49,6 @@ body {
 }
 
 .card-formacion{
-    width: 300px;
-    padding: 20px;
     border: 2px solid #0d6efd;
     border-radius: 16px;
 }
@@ -80,4 +78,23 @@ footer a {
     height: 40px;
     display: block;
     margin: 0 auto 10px;
+}
+
+@media screen and (max-width: 768px){
+
+    .perfil{
+        width: 150px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    footer{
+        padding: 30px 20px;
+    }
 }
