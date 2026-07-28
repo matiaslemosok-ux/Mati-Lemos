@@ -1,100 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 75%
+  font-size: 75%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.navbar{
-    background-color: #dbeafe;
-    font-weight: bold;
+.textop {
+  font-size: 14px;
 }
 
-.logo {
-    width: 50px;
-    height: auto;
+.textot {
+  font-size: 18px;
 }
 
-.perfil {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    border-radius: 100px;
-    border: 5px solid #dbeafe;
-    margin-top: 50px;
+.textos {
+  color: #0d6efd;
+  font-size: 14px;
 }
 
-.habilidad {
-    border: 1px solid #7ab3ff;
-    border-radius: 24px;
-    min-height: 280px;
+.navbar {
+  background-color: #dbeafe;
+  font-weight: bold;
 }
-
-.pills {
-    background-color: #dbeafe;
-    color: #1d4ed8;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 10px 16px;
-    margin: 6px;
-    border-radius: 999px;
+.navbar .logo {
+  width: 70px;
+  height: auto;
 }
-
-.card-formacion{
-    border: 2px solid #0d6efd;
-    border-radius: 16px;
+.navbar .nav-link {
+  color: #000;
+  transition: 0.3s ease;
 }
-
-.subtitulo-card{
-    color: #0d6efd;
+.navbar .nav-link:hover {
+  color: #0d6efd;
 }
 
 footer {
-    background-color: #dbeafe;
-    padding: 50px 50px;
+  background-color: #dbeafe;
+  padding: 50px;
 }
-
 footer a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover {
+  color: #0d6efd;
+}
+footer .footer-divider {
+  height: 1px;
+  background: #0d6efd;
+  margin: 40px 0;
 }
 
-.footer-divider {
-    height: 1px;
-    background: #000;
-    margin: 40px 0;
+.perfil {
+  display: block;
+  margin: 50px auto 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #dbeafe;
 }
 
-.icono{
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin: 0 auto 10px;
+.habilidad {
+  border: 1px solid #7ab3ff;
+  border-radius: 24px;
+  min-height: 280px;
 }
 
-@media screen and (max-width: 768px){
+.pills {
+  background-color: #dbeafe;
+  color: #0d6efd;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 999px;
+}
 
-    .perfil{
-        width: 150px;
-    }
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 1.5rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    footer{
-        padding: 30px 20px;
-    }
+.card {
+  transition: 0.3s ease;
+  border-radius: 16px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  border-radius: 16px 16px 0 0;
+}
+
+.card-formacion {
+  border: 2px solid #0d6efd;
+  border-radius: 16px;
+}
+
+.subtitulo-card {
+  color: #0d6efd;
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 10px;
 }

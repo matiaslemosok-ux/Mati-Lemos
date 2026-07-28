@@ -1,0 +1,34 @@
+.card{
+
+    @include transition;
+
+    border-radius:$radio-card;
+
+    &:hover{
+
+        transform:translateY(-5px);
+
+        @include sombra;
+
+    }
+
+    img{
+
+        border-radius:$radio-card $radio-card 0 0;
+
+    }
+
+}
+
+.card-formacion{
+
+    border:2px solid $color-principal;
+    border-radius:$radio-card;
+
+}
+
+.subtitulo-card{
+
+    color:$color-principal;
+
+}

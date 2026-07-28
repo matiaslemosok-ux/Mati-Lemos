@@ -1,0 +1,23 @@
+.navbar{
+
+    background-color:$color-secundario;
+    font-weight:bold;
+
+    .logo{
+        width:70px;
+        height:auto;
+    }
+
+    .nav-link{
+
+        color:$color-texto;
+
+        @include transition;
+
+        &:hover{
+            color:$color-principal;
+        }
+
+    }
+
+}

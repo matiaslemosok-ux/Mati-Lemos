@@ -1,0 +1,23 @@
+footer{
+
+    background-color:$color-secundario;
+    padding:50px;
+
+    a{
+
+        text-decoration:none;
+        color:$color-texto;
+
+        &:hover{
+            color:$color-principal;
+        }
+
+    }
+
+    .footer-divider{
+        height:1px;
+        background:$color-principal;
+        margin:40px 0;
+    }
+
+}
