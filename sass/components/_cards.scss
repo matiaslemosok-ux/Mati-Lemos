@@ -1,20 +1,24 @@
 .card{
 
-    @include transition;
+    transition:
 
-    border-radius:$radio-card;
+    transform .35s ease,
+
+    box-shadow .35s ease;
+
+    cursor:pointer;
 
     &:hover{
 
-        transform:translateY(-5px);
+    transform:
 
-        @include sombra;
+    translateY(-10px)
 
-    }
+    scale(1.02);
 
-    img{
+    box-shadow:
 
-        border-radius:$radio-card $radio-card 0 0;
+    0 20px 40px rgba(0,0,0,.18);
 
     }
 

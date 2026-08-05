@@ -61,10 +61,16 @@ footer .footer-divider {
 .perfil {
   display: block;
   margin: 50px auto 0;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid #dbeafe;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.perfil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .habilidad {
@@ -84,15 +90,12 @@ footer .footer-divider {
 }
 
 .card {
-  transition: 0.3s ease;
-  border-radius: 16px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
 }
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-.card img {
-  border-radius: 16px 16px 0 0;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 
 .card-formacion {
@@ -110,3 +113,5 @@ footer .footer-divider {
   display: block;
   margin: 0 auto 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
